@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+   <title>Home | Buschner</title>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Document</title>
+
+   <link rel="stylesheet" href="style.css">
+
+   <meta charset="utf-8" />
+   <meta name="author" content="Players code" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+   <title>HTML5 Custom Audio player with playlist</title>
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+   <script type="text/javascript">
+      let initialized = false;
+      window.onload = function() {
+         player.src = file;
+         player.play();
+         if (!initialized) {
+            initializeVisualizer($("canvas")[0], $("audio")[0]);
+            initialized = true;
+         }
+         updateSongText(files[0].name);
+      };
+   </script>
+   <style>
+      #canvas {
+         float: left;
+         margin-left: 10px;
+         width: 250px;
+         height: 40px;
+         margin-bottom: 10px;
+         background: -webkit-gradient(linear, left top, right top, color-stop(0%, #CCCCCC), color-stop(50%, #EEEEEE), color-stop(50%, #EEEEEE), color-stop(100%, #CCCCCC));
+         border-radius: 3px;
+         box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <div id="container">
+      <nav>
+         <ul>
+            <li><a href="https://buschner.netlify.app/"><<</a>
+
+               <li><a target="_blank" href="https://www.Facebook.de"><img src="https://raw.githubusercontent.com/Mbuschi2101/123456789/refs/heads/main/IPTV/piconglasssd/deoeff/ard.png" alt="socialmedia" class="socialmedia" width="50" height="30"></a></li>
+               
+               <li><a target="_blank" href="https://www.instagram.com/"><img src="https://raw.githubusercontent.com/Mbuschi2101/123456789/refs/heads/main/IPTV/piconglasssd/deoeff/zdf.png" alt="socialmedia" class="socialmedia" width="50" height="30"></a></li>
+
+               <li><a target="_blank" href="https://x.com/"><img src="https://raw.githubusercontent.com/Mbuschi2101/123456789/refs/heads/main/IPTV/piconglasssd/deprivat/rtl.png" alt="socialmedia" class="socialmedia" width="50" height="30"></a></li>
+            
+
+      </nav>
+
+<body>
+   <stream>
+     <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://vjs.zencdn.net/8.9.0/video-js.css" rel="stylesheet" />
+         <script defer src="https://vjs.zencdn.net/8.9.0/video.min.js"></script>
+     <center>
+      <video
+      id="my-video"
+      class="video-js"
+      controls autoplay
+      preLoad="auto"
+      width="1000"
+      height="650"
+      data-setup="{}"
+      >
+      <source src="https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8" type="application/x-mpegURL">
+      </video>
+      </center>
+   </stream>
+
+</body>
